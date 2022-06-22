@@ -21,9 +21,11 @@
 
 
 
-
+qualquer = []
 jogador = 1
 listaJog = []
+numVotos = []
+perCentVotos = []
 while jogador != 0:
     if jogador > 0 and jogador < 24:
         jogador = int(input('Digite o número do jogador:(0=fim)'))
@@ -33,17 +35,27 @@ while jogador != 0:
         print('Digite número entre 1 e 23')
         jogador = 1
 print('Resultado da votação!\nForam computados',len(listaJog),'votos!')
+
 print(listaJog)
 listaJog.sort()    
 print(listaJog)
-rep = 0
 print('Jogador  Votos    %')
-for k in range(0,len(listaJog)-1):
-    if(listaJog[k]==listaJog[k+1]):
-        rep+=1
-        if (k==len(listaJog)-2):
-            print('  ',listaJog[k] ,'     ',rep+1)
-    else:
-        print('  ',listaJog[k],'     ',rep+1)
-        rep=0
+
+
+
+
+
+
+
+
+
+#rep = 0
+# for k in range(0,len(listaJog)-1):
+#     if(listaJog[k]==listaJog[k+1]):
+#         rep+=1
+#         if (k==len(listaJog)-2):
+#             print('  ',listaJog[k] ,'     ',rep+1)
+#     else:
+#         print('  ',listaJog[k],'     ',rep+1)
+#         rep=0
 

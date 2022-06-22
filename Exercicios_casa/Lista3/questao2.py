@@ -1,5 +1,5 @@
 
-atleta = []
+atleta = [1]
 atletasLista = []
 paradaCond = 'a'
 distancias = []
